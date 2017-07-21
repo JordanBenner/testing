@@ -3,10 +3,9 @@
 //
 // document.write('click to return to ' + hotText.link(URL));
 
-alert('Welcome to the page');
-var name = prompt('what is your name?')
-var favoriteColor = prompt('what is your favorite color?');
+var age = prompt('what is your age?')
+var yearsAlive = parseInt(age);
 
-document.write('Hello my name is ' + name + ' and my favorite color is ' + favoriteColor);
+yearsAlive = yearsAlive * 365;
 
-console.log('Program Complete');
+document.write('you have been alive for ' + yearsAlive + ' days!!!')
