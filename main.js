@@ -3,17 +3,17 @@
 //
 // document.write('click to return to ' + hotText.link(URL));
 
-var correctAnswer = false;
-var answer= prompt('what is 2+2?');
 
-  if (answer === '4'){
-  var correctAnswer = true;
-  }
-  else if (correctAnswer == true){
-  alert('good job the answer is indeed ' + answer);
-  document.write('you are a math wiz!');
-  }
-  else{
-    alert('sorry that is not the right answer.');
-    document.write('Please try again.')
-  }
+function calc_age (age) {
+  var yearsAlive = parseInt(age);
+
+  yearsAlive = yearsAlive * 365;
+  return yearsAlive;
+
+  //document.write('you have been alive for ' + yearsAlive + ' days!!!')
+
+  //var number = Math.floor(Math.random() * 50) + 1;
+  //return(number);
+}
+
+exports.calc_age = calc_age;
