@@ -1,4 +1,5 @@
 var chai = require('chai');
+var main = require('../main');
 var expect = chai.expect;
 var webdriverio = require('webdriverio');
 
@@ -10,6 +11,14 @@ describe('my webdriverio tests', function() {
     client = webdriverio.remote({ desiredCapabilities: {browserName: 'chrome'} });
     return client.init();
   });
+
+  describe('Main.js', function() {
+    it('Age Calc', function() {
+      var number = main.calc_age('35');
+      expect(12775).to.equal(number);
+    });
+  });
+
 
   it('Github test',function() {
       return client
