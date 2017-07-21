@@ -3,11 +3,17 @@
 //
 // document.write('click to return to ' + hotText.link(URL));
 
-var number = Math.floor(Math.random() * 50) + 1;
-alert(number);
+var correctAnswer = false;
+var answer= prompt('what is 2+2?');
 
-var number2 = prompt('whats ur favorit number?');
-number2 = parseInt(number2);
-
-var  number = Math.floor(Math.random()* number2) + 1;
-alert('your number is ' + number);
+  if (answer === '4'){
+  var correctAnswer = true;
+  }
+  else if (correctAnswer == true){
+  alert('good job the answer is indeed ' + answer);
+  document.write('you are a math wiz!');
+  }
+  else{
+    alert('sorry that is not the right answer.');
+    document.write('Please try again.')
+  }
