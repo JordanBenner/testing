@@ -3,9 +3,11 @@
 //
 // document.write('click to return to ' + hotText.link(URL));
 
-var age = prompt('what is your age?')
-var yearsAlive = parseInt(age);
+var number = Math.floor(Math.random() * 50) + 1;
+alert(number);
 
-yearsAlive = yearsAlive * 365;
+var number2 = prompt('whats ur favorit number?');
+number2 = parseInt(number2);
 
-document.write('you have been alive for ' + yearsAlive + ' days!!!')
+var  number = Math.floor(Math.random()* number2) + 1;
+alert('your number is ' + number);
