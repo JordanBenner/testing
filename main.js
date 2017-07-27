@@ -34,7 +34,7 @@ if (anser === '4'){
   points === points +1;
    alert('good job');
 else{
-  alert('try again')
+  alert('try again');
   }
 }
 
@@ -42,15 +42,15 @@ var points = 0;
 var question2 = prompt('what is 200 + 10?');
 if (answer === '210'){
   points === points +1;
-  alert('your are killing it!')
+  alert('your are killing it!');
 else {
   alert('try again');
   }
 }
 
 if (points === 2 || points ===3){
-  alert('congrats you passed the quiz!')
+  alert('congrats you passed the quiz!');
   else {
-    alert('take quiz again?')
+    document.write('take quiz again?');
   }
 }
