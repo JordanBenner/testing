@@ -27,3 +27,16 @@ exports.calc_age = calc_age;
 //     alert('sorry that is not the right answer.');
 //     document.write('Please try again.')
 //   }
+
+var points = 0
+var correctAnswer false;
+var answer = prompt('what is 2+2?');
+if (anser === '4'){
+  points === points +1;
+   var correctAnswer = true;
+   alert('good job');
+else{
+  alert('try again')
+}
+
+}
